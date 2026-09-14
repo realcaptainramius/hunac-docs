@@ -53,6 +53,19 @@ header.site .mark {
   color: #fff;
   font-weight: 700;
   font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+header.site .mark.brand {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+header.site .mark.brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 header.site .name {
