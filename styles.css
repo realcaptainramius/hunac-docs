@@ -93,6 +93,13 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.lead {
+  color: var(--fg);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -115,6 +122,23 @@ h1 {
 }
 
 .card a.btn:hover { text-decoration: underline; }
+
+.card ol, .card ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0 0;
+}
+
+.card li {
+  margin-bottom: 0.6rem;
+}
+
+.card li:last-child { margin-bottom: 0; }
+
+.card h3:first-child { margin-top: 0; }
+
+.card h3 {
+  margin-bottom: 0.4rem;
+}
 
 .store-row {
   display: flex;
