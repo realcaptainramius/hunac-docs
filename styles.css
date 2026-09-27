@@ -195,3 +195,43 @@ code {
   border-radius: 4px;
   font-size: 0.9em;
 }
+
+figure.shot {
+  margin: 0 0 1.75rem;
+}
+
+figure.shot img,
+img.shot-side {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+
+figure.shot figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+.split {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.split > div { flex: 1; }
+
+.split img.shot-side {
+  flex: 0 0 38%;
+  width: 38%;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 560px) {
+  .split { flex-direction: column; }
+  .split img.shot-side { width: 100%; max-width: 340px; margin: 0 auto; }
+}
