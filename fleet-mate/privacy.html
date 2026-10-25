@@ -21,34 +21,58 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="tagline muted">Last updated: September 12, 2026</p>
+    <p class="tagline muted">Last updated: October 25, 2026</p>
 
-    <p>This policy explains what information Fleet Mate ("the app") collects, how it's used, and who it's shared with. It applies to the Fleet Mate iOS app and its companion backend.</p>
+    <p>This policy explains what information Fleet Mate ("the app") collects, how it's used, and who it's shared with. It applies to the Fleet Mate iOS app, the Fleet Mate web app, and the backend they share.</p>
 
     <h2>Information we collect</h2>
-    <p>To use Fleet Mate, you create an account with an email address and password. Beyond your account credentials, the app stores the vehicle and maintenance information you choose to enter, which may include:</p>
+    <p>To use Fleet Mate, you create an account with an email address and password. Beyond your account credentials, the app stores the vehicle and maintenance information you choose to enter or upload, which may include:</p>
     <ul>
       <li>Vehicle details such as make, model, year, VIN, and serial number</li>
-      <li>Maintenance records, odometer readings, and fuel logs</li>
-      <li>Receipts or photos you upload</li>
-      <li>Any messages you send to the in-app assistant (see "Third-party services" below)</li>
+      <li>Maintenance records, odometer readings, fuel logs, parts, and tire records</li>
+      <li>Receipts, photos, and documents you upload — for example owner's manuals, window stickers, oil analysis reports, and vehicle history reports such as CARFAX or AutoCheck</li>
+      <li>Documents you email to your personal Fleet Mate inbox address</li>
+      <li>Files and web links you save to a vehicle's Reference Library</li>
+      <li>Vehicle history you record, such as past owners and restorations</li>
+      <li>Messages you send to the Fleet Mate assistant</li>
     </ul>
-    <p>We don't collect location data, contacts, or any information you don't directly enter into the app.</p>
+    <p>Some documents you upload contain information about other people. A vehicle history report, for example, lists the city and state of each earlier owner. Fleet Mate stores what's in the document so you can keep it with the vehicle's records.</p>
+    <p>We don't collect location data, contacts, or any information you don't directly enter, upload, or send to the app.</p>
 
     <h2>Where your data is stored</h2>
-    <p>Fleet Mate's backend runs on infrastructure we operate and manage directly, rather than a third-party cloud platform. We don't sell your data, and we don't use advertising or analytics SDKs that track you.</p>
+    <p>Fleet Mate's backend and your stored files run on infrastructure we operate and manage directly, rather than a third-party cloud platform. We don't sell your data, and we don't use advertising or analytics SDKs that track you.</p>
 
     <h2>Third-party services</h2>
-    <p>Fleet Mate includes an optional in-app chat assistant that can answer questions about your vehicles. When you use this feature, the relevant portion of your vehicle data and your message are sent to Google's Gemini API for processing, subject to <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's API terms</a> and privacy practices. This only happens when you actively use the chat feature.</p>
+    <p>A few features rely on outside services. Each receives only what that feature needs.</p>
+
+    <h3>Google Gemini (AI features)</h3>
+    <p>Fleet Mate uses Google's Gemini API to read documents and answer questions. Data is sent to Gemini when you:</p>
+    <ul>
+      <li>Upload or email a document. Gemini reads it to identify what it is and pull out the details: dates, line items, readings, fluid specs, owners, and so on. You review the result before it's saved.</li>
+      <li>Add a file or link to the Reference Library. Gemini reads it once to write a short summary.</li>
+      <li>Translate a Reference Library document. Gemini reads it page by page into English.</li>
+      <li>Download a vehicle report. Gemini writes the short summary at the top from the vehicle's records.</li>
+      <li>Use the Fleet Mate assistant. Your message and the relevant vehicle's records (service history, intervals, parts, fuel, history, and saved reference summaries) are sent with it. The assistant may also use Google Search or open a saved link to answer.</li>
+    </ul>
+    <p>This processing is subject to <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's Gemini API terms</a> and privacy practices. Your uploaded files stay stored on our infrastructure; Gemini receives them only to process the request.</p>
+
+    <h3>SendGrid (email)</h3>
+    <p>Email to and from Fleet Mate goes through SendGrid, a Twilio service. Documents you send to your Fleet Mate inbox address pass through SendGrid on their way to us, and the weekly maintenance digest is sent to your account email through SendGrid.</p>
+
+    <h3>NHTSA (recalls and VIN details)</h3>
+    <p>To look up recalls and decode vehicle details, Fleet Mate sends a vehicle's VIN, or its make, model, and year, to the U.S. National Highway Traffic Safety Administration's public vehicle APIs. No account or personal information is sent.</p>
 
     <h2>How we use your information</h2>
-    <p>We use the information you provide solely to operate the app's core features: storing your vehicles and maintenance history, generating reminders and summaries, and powering the chat assistant when you use it.</p>
+    <p>We use the information you provide solely to operate the app's features: storing your vehicles and records, reading the documents you upload, sending reminders and the weekly digest, generating reports, and powering the assistant when you use it.</p>
+
+    <h2>Your data, exported</h2>
+    <p>You can download everything on file for a vehicle at any time. On the web, <strong>Download Report &rarr; Full Report with All Documentation</strong> gives you a ZIP with a PDF report and every original document stored for that vehicle.</p>
 
     <h2>Data retention and deletion</h2>
-    <p>Your data is retained for as long as your account is active. You can request deletion of your account and all associated data at any time by emailing <a href="mailto:apps@hunacenterprises.com">apps@hunacenterprises.com</a>. We'll confirm once it's been removed.</p>
+    <p>Your data is retained for as long as your account is active. You can permanently delete a vehicle and all of its records yourself from the web app's Admin page. To delete your whole account and all associated data, email <a href="mailto:apps@hunacenterprises.com">apps@hunacenterprises.com</a>. We'll confirm once it's been removed.</p>
 
     <h2>Security</h2>
-    <p>We take reasonable technical measures to protect your data, including encrypted connections between the app and our backend. No method of storage or transmission is completely secure, and we can't guarantee absolute security.</p>
+    <p>We take reasonable technical measures to protect your data, including encrypted connections between the apps and our backend. No method of storage or transmission is completely secure, and we can't guarantee absolute security.</p>
 
     <h2>Children's privacy</h2>
     <p>Fleet Mate is not directed at children under 13, and we do not knowingly collect information from them.</p>
